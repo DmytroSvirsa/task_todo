@@ -8,5 +8,5 @@ Django project for managing your tasks
 * organize and customise tasks with tags
 
 
-![](Screenshot_1.png)
-![](Screenshot_2.png)
+![img_1.png](img_1.png)
+![img.png](img.png)
