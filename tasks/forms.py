@@ -13,7 +13,7 @@ class TaskForm(forms.ModelForm):
     deadline = forms.DateTimeField(
         input_formats=settings.DATETIME_INPUT_FORMATS,
         required=False,
-        widget=forms.TextInput(attrs={"placeholder": "YYYY-MM-DD 23:59:59"})
+        widget=forms.TextInput(attrs={"placeholder": "YYYY-MM-DD 23:59:59"}),
     )
 
     class Meta:
