@@ -29,12 +29,8 @@ class TaskDeleteView(generic.DeleteView):
 
 def confirm(request, pk):
     task = Task.objects.get(id=pk)
-    if task.is_done:
-        task.is_done = False
-        task.save()
-    else:
-        task.is_done = True
-        task.save()
+    task.is_done = not task.is_done
+    task.save()
     return HttpResponseRedirect(reverse_lazy("tasks:task-list"))
 
 
