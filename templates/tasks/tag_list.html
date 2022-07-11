@@ -1,11 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>
+  <h1>
     Tags:
-    <button type="button" class="btn btn-outline-primary">
-      <a href="{% url 'tasks:tag-create' %}">Add</a>
-    </button>
+    <a class="btn btn-outline-primary float-right" href="{% url 'tasks:tag-create' %}">Add</a>
   </h1>
 
 
